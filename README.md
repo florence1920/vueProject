@@ -1,4 +1,2 @@
-
-# vueProject
-Vue study
-
+#Vue-study
+news project
