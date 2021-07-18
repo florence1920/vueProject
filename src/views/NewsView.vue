@@ -1,7 +1,9 @@
 <template>
     <div>
-        <div v-for="user in fetchedNews" v-bind:key="user.id">
+        <div v-for="user in fetchedNews" v-bind:key="user.id" class="listView">
             <a v-bind:href="user.url">{{ user.title }}</a>
+            <small class="time">{{ user.time_ago }}</small>
+            <span class="user">{{ user.user }}</span>
         </div>
     </div>
 </template>

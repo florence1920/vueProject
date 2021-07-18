@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div v-for="job in fetchedJobs" v-bind:key="job.id">
+        <div v-for="job in fetchedJobs" v-bind:key="job.id" class="listView">>
             <a v-bind:href="job.url">{{ job.title }}</a>
         </div>
     </div>

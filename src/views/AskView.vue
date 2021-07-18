@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div v-for="ask in fetchedAsk" v-bind:key="ask.id">
+        <div v-for="ask in fetchedAsk" v-bind:key="ask.id" class="listView">
             <a v-bind:href="`https://news.ycombinator.com/${ask.url}`">{{ ask.title }}</a> 
         </div>
     </div>
