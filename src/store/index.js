@@ -12,7 +12,9 @@ import actions from './actions.js';
         state:{
             news:[],
             jobs:[],
-            asks:[]
+            asks:[],
+            user:{},
+            item:[],
         },
         getters:{
             fetchedAsk(state){

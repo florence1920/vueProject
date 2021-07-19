@@ -1,7 +1,7 @@
 <template>
     <div>
         <div v-for="ask in fetchedAsk" v-bind:key="ask.id" class="listView">
-            <a v-bind:href="`https://news.ycombinator.com/${ask.url}`">{{ ask.title }}</a> 
+            <router-link v-bind:to="`item/${ask.id}`">{{ ask.title }}</router-link>
         </div>
     </div>
 </template>

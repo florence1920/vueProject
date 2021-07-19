@@ -3,7 +3,9 @@
         <div v-for="user in fetchedNews" v-bind:key="user.id" class="listView">
             <a v-bind:href="user.url">{{ user.title }}</a>
             <small class="time">{{ user.time_ago }}</small>
-            <span class="user">{{ user.user }}</span>
+            <span class="user">
+                <router-link v-bind:to="`/user/${user.user}`">{{ user.user }}</router-link>
+            </span>
         </div>
     </div>
 </template>
