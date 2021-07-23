@@ -28,7 +28,7 @@ export default {
     FETCH_ASK(context){
         fetchAskList()
         .then(response => {
-            context.commit('SET_ASKS',response.data);
+            context.commit('SET_ASK',response.data);
         })
         .catch(error => {
             console.log(error);

@@ -12,19 +12,22 @@ import actions from './actions.js';
         state:{
             news:[],
             jobs:[],
-            asks:[],
+            ask:[],
             user:{},
             item:[],
         },
         getters:{
             fetchedAsk(state){
-                return state.asks;
+                return state.ask;
             },
             fetchedNews(state){
                 return state.news;
             },
             fetchedJobs(state){
                 return state.jobs;
+            },
+            fetchedItem(state){
+                return state.item;
             }
         },
         //앞 뒤가 같으면 짜른다.
