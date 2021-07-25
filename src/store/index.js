@@ -14,7 +14,7 @@ import actions from './actions.js';
             jobs:[],
             ask:[],
             user:{},
-            item:[],
+            item:{},
         },
         getters:{
             fetchedAsk(state){

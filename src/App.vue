@@ -36,5 +36,5 @@ export default {
   overflow: hidden; text-overflow: ellipsis; text-decoration: none; color:#212529; font-size:1em; font-weight: 600; margin: 0 15px 0 0;}
   .listView > li:hover .title {color:#fff;}
   .listView > li .time {color:#aaa;}
-  .listView > li .keyColor {color:#ff008c; text-decoration: none;}
+  .keyColor {color:#ff008c; text-decoration: none;}
 </style>
